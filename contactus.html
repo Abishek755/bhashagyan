@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Bhasha Gyan</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: #FDF8EE;
+            color: #333;
+        }
+
+        /* Navbar */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            flex-wrap: wrap;
+        }
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+            font-size: 15px;
+        }
+        .btn-login {
+            background: #3a1f68;
+            padding: 10px 22px;
+            border-radius: 25px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 10px;
+            color: #4D2C5E;
+        }
+        .subtitle {
+            text-align: center;
+            margin-top: -10px;
+            font-size: 15px;
+            line-height: 22px;
+            padding: 0 15px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 60px;
+            flex-wrap: wrap;
+        }
+
+        .info-box, .form-box {
+            width: 350px;
+            padding: 25px;
+            border-radius: 15px;
+        }
+        .info-box {
+            background: #DDF4E7;
+        }
+        .form-box {
+            background: #FAF2D8;
+        }
+        .form-box input, .form-box textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        .send-btn {
+            padding: 10px 20px;
+            background: #4D2C5E;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .subscribe-section {
+            background: #4D2C5E;
+            margin-top: 60px;
+            padding: 50px 20px;
+            border-radius: 12px;
+            text-align: center;
+            color: white;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .subscribe-section input {
+            padding: 12px;
+            width: 70%;
+            max-width: 260px;
+            border-radius: 20px;
+            border: none;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .subscribe-btn {
+            padding: 12px 30px;
+            border-radius: 20px;
+            background: #ff7300;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: auto;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        /* Tablet Fix */
+        @media(max-width: 768px) {
+            header { flex-direction: column; text-align: center; gap: 10px; }
+            nav a { padding: 8px; display: inline-block; }
+            .container { margin: 20px; }
+        }
+
+        /* Mobile Fix */
+        @media(max-width: 480px) {
+            .subscribe-section { width: 90%; }
+            .subscribe-section input { width: 100%; margin-right: 0; }
+            .subscribe-btn { width: 100%; }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Bhasha Gyan</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Courses</a>
+            <a href="#">Our Service</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+
+        <a href="#" class="btn-login">Sign In</a>
+    </header>
+
+    <h2>Contact Bhasha Gyan</h2>
+
+    <p class="subtitle">
+        Have questions about Hindi learning, speaking classes,<br>
+        DBHPS exam preparation?<br>
+        We're here to help!
+    </p>
+
+    <div class="container">
+
+        <div class="info-box">
+            <h3>📧 Email</h3>
+            <p>support@bhashagyan.in</p>
+
+            <h3>📞 Phone</h3>
+            <p>+91 98765 43210</p>
+
+            <h3>📍 Address</h3>
+            <p>Bhasha Gyan Learning Center<br>Chennai, Tamil Nadu, India</p>
+        </div>
+
+        <div class="form-box">
+            <h3>Send Us a Message</h3>
+            <input type="text" placeholder="Enter your name" />
+            <input type="email" placeholder="Enter your email" />
+            <textarea rows="5" placeholder="Message"></textarea>
+            <button class="send-btn">Send Message</button>
+        </div>
+
+    </div>
+
+    <div class="subscribe-section">
+        <h3>Subscribe to Get In Touch</h3>
+        <input type="email" placeholder="Email Address" />
+        <button class="subscribe-btn">Send</button>
+    </div>
+
+    <footer>
+        Bhasha Gyan All Rights Reserved, 2025
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhasha Gyan | Home</title>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+        body { background: #fffaf3; }
+
+        /* Navbar */
+        header { width: 100%; padding: 25px 8%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+        header nav a { margin: 0 15px; text-decoration: none; color: #000; font-size: 15px; }
+        .btn-login { background: #3a1f68; padding: 10px 22px; border-radius: 25px; color: #fff; text-decoration: none; }
+
+        /* Hero Section */
+        .hero { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 60px 8%; flex-wrap: wrap; }
+        .hero-text { max-width: 500px; }
+        .hero-text h1 { font-size: 48px; line-height: 1.3; }
+        .hero-text span { color: #ff6600; }
+        .hero-text p { margin: 15px 0; color: #333; line-height: 1.6; }
+
+        .hero-img img { width: 500px; max-width: 100%; }
+
+        /* Info Cards */
+        .info-box { width: 90%; background: #3a1f68; padding: 30px; margin: 40px auto; border-radius: 15px; display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; color: white; }
+        .info-card { min-width: 250px; text-align: center; padding: 20px; }
+
+        /* Courses */
+        .section-title { text-align: center; font-size: 32px; margin-top: 40px; }
+
+        .courses { width: 90%; margin: auto; display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; margin-top: 30px; }
+        .course-card { width: 32%; min-width: 280px; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .course-card img { width: 100%; border-radius: 10px 10px 0 0; }
+        .course-content { padding: 15px; }
+        .join-btn { background: #ff6600; padding: 10px 20px; border-radius: 25px; color: white; text-decoration: none; display: inline-block; margin: 15px 0; cursor: pointer; }
+
+        /* Premium Section */
+        .premium { margin-top: 60px; padding: 50px 8%; background: #fff1d6; display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+        .premium img { width: 200px; max-width: 100%; }
+        .premium-text h1 { font-size: 48px; line-height: 1.3; }
+        .premium-text li { font-size: 20px; line-height: 2; }
+        .premium-text h1 span { color: #ff6600; }
+
+        /* Testimonials */
+        .testimonials { margin-top: 60px; text-align: center; }
+        .test-boxes { width: 90%; margin: 30px auto; display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
+        .test-card { width: 30%; min-width: 280px; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+
+        /* Tutors */
+        .tutors { margin-top: 60px; text-align: center; }
+        .tutor-data { text-align: justify; }
+        .tutor-card img { width: 100%; border-radius: 170px; }
+        .tutor-grid { width: 90%; margin: auto; margin-top: 30px; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .tutor-card { width: 30%; min-width: 280px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+
+        /* Subscribe */
+        .subscribe { width: 65%; height: auto; margin: 50px auto; background: #3a1f68; padding: 40px; border-radius: 15px; text-align: center; color: white; }
+        .subscribe input { padding: 12px; width: 55%; max-width: 350px; border-radius: 25px; border: none; margin-right: 10px; }
+        .subscribe button { padding: 12px 30px; border-radius: 25px; border: none; background: #ff6600; color: white; cursor: pointer; }
+
+        /* Footer */
+        footer { display: flex; flex-wrap: wrap; justify-content: space-between; padding: 50px 8%; background: #fff; }
+        footer div { width: 22%; min-width: 200px; }
+
+        /* Tablet */
+        @media(max-width: 768px) {
+            header { flex-direction: column; text-align: center; gap: 10px; }
+            nav a { padding: 8px; display: inline-block; }
+        }
+
+        /* Mobile */
+        @media(max-width: 480px) {
+
+            .hero-text h1 { font-size: 32px; text-align: center; }
+            .hero-text p { text-align: center; font-size: 14px; }
+
+            .hero-img img { width: 90%; margin: auto; display: block; }
+
+            .info-card,
+            .course-card,
+            .tutor-card,
+            .test-card { width: 100% !important; }
+
+            .premium { padding: 20px; text-align: center; }
+            .premium img { width: 150px; }
+            .premium-text h1 { font-size: 28px; }
+
+            footer div { width: 100%; text-align: center; margin-bottom: 15px; }
+
+            .subscribe input { width: 100%; margin-bottom: 10px; }
+            .subscribe button { width: 100%; }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Bhasha Gyan</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Courses</a>
+            <a href="#">Our Service</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+        <a href="#" class="btn-login">Sign In</a>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>The <span>Smart</span><br> Choice For Future</h1>
+            <p>Discover a new way to learn with interactive video lessons, weekly exams, and voice-based AI classes.</p>
+        </div>
+        <div class="hero-img">
+            <img src="homepage_ilu.png" alt="Learning Illustration" />
+        </div>
+    </section>
+
+    <div class="info-box">
+        <div class="info-card">Take A Course And Learn From it</div>
+        <div class="info-card">Perform Well in exam</div>
+        <div class="info-card">Earn a Certificate</div>
+    </div>
+
+    <h2 class="section-title">Our Courses</h2>
+
+    <div class="courses">
+        <div class="course-card">
+            <img src="DBHP 1.png" />
+            <div class="course-content">
+                <h3>DBHPS All Eight Exams</h3>
+                <p>Fees depend on level</p>
+                <a class="join-btn">Join Course</a>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <img src="spoken_img.png" />
+            <div class="course-content">
+                <h3>Spoken Hindi (5 Levels)</h3>
+                <p>Fees depend on level</p>
+                <a class="join-btn">Join Course</a>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <img src="RWimg 1.png" />
+            <div class="course-content">
+                <h3>Reading & Writing</h3>
+                <p>₹1500</p>
+                <a class="join-btn">Join Course</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="premium">
+        <img src="Premium_img.png" />
+        <div class="premium-text">
+            <h1>Premium <span>Learning</span><br> Experience</h1>
+            <ul>
+                <li>🧏‍♂️Easily Accessible</li>
+                <li>🧮Fun learning experience</li>
+                <li>🤖Learn with AI speech & quiz</li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="testimonials">
+        <h2>What Students Say</h2>
+        <div class="test-boxes">
+            <div class="test-card">"Teachings of wisdom..."</div>
+            <div class="test-card">"Complete account of the system..."</div>
+            <div class="test-card">"There are many variations..."</div>
+        </div>
+    </div>
+
+    <section class="tutors">
+        <h2>Our Tutors</h2>
+        <p>Well Experienced and Certified Mentors for each courses</p>
+
+        <div class="tutor-grid">
+
+            <div class="tutor-card">
+                <img src="Female_staff.png" />
+                <div class="tutor-data">
+                    <br>
+                    <h3>Muruga Lakshmi,(RBB)</h3>
+                    Mentor And Tutor @Edustar International School<br><br>
+                    A teaching expert who has 12+ years experience in this field.
+                    <h4>DBHPS Exam Tutor</h4>
+                </div>
+            </div>
+
+            <div class="tutor-card">
+                <img src="male_staff.png" />
+                <div class="tutor-data">
+                    <br>
+                    <h3>Mari Muthu, Ex.CRPF</h3>
+                    Spoken Hindi Expert<br><br>
+                    Practical spoken experience in 5+ languages, Hindi speaking specialist.
+                    <h4>Spoken Hindi Tutor</h4>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="subscribe">
+        <h2>Subscribe to Get In Touch</h2>
+        <input type="email" placeholder="Email Address" />
+        <button>Send</button>
+    </div>
+
+    <footer>
+        <div><h3>Bhasha Gyan</h3><p>Learn Hindi the smart way.</p></div>
+        <div><h4>Company</h4><p>About Us<br>How it works<br>Services</p></div>
+        <div><h4>Courses</h4><p>Reading & Writing<br>DBHPS<br>Spoken Hindi</p></div>
+        <div><h4>Contact Info</h4><p>+91 9980571195<br>bhashagyan@gmail.com<br>Tamil Nadu</p></div>
+    </footer>
+
+</body>
+</html>
