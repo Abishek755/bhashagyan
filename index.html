@@ -62,8 +62,11 @@
         .subscribe button { padding: 12px 30px; border-radius: 25px; border: none; background: #ff6600; color: white; cursor: pointer; }
 
         /* Footer */
-        footer { display: flex; flex-wrap: wrap; justify-content: space-between; padding: 50px 8%; background: #fff; }
+        footer {display: flex;flex-wrap: wrap;justify-content: space-between;padding: 40px 8%;background: #fffaf3;border-top: 1px solid #e8e0d0;}
         footer div { width: 22%; min-width: 200px; }
+        footer h3, footer h4 { margin-bottom: 10px;color: #3a1f68;}
+        footer p {color: #444;line-height: 1.6;font-size: 14px;}
+
 
         /* Tablet */
         @media(max-width: 768px) {
@@ -101,12 +104,13 @@
         <h2>Bhasha Gyan</h2>
         <nav>
             <a href="index.html">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Courses</a>
-            <a href="#">Our Service</a>
+            <a href="about us.html">About Us</a>
+            <a href="course.html">Courses</a>
+            <a href="services.html">Our Service</a>
             <a href="contactus.html">Contact Us</a>
         </nav>
-        <a href="#" class="btn-login">Sign In</a>
+        <a href="loginpage.html" class="btn-login">Login</a>
+        <a href="signin.html" class="btn-login">Sign In</a>
     </header>
 
     <section class="hero">
@@ -133,7 +137,8 @@
             <div class="course-content">
                 <h3>DBHPS All Eight Exams</h3>
                 <p>Fees depend on level</p>
-                <a class="join-btn">Join Course</a>
+                <!-- <p>⚠️Cycle Closed</p> -->
+                <a class="join-btn">⚠️Cycle Closed</a>
             </div>
         </div>
 
@@ -142,7 +147,7 @@
             <div class="course-content">
                 <h3>Spoken Hindi (5 Levels)</h3>
                 <p>Fees depend on level</p>
-                <a class="join-btn">Join Course</a>
+                <a class="join-btn">⚠️Cycle Closed</a>
             </div>
         </div>
 
@@ -150,7 +155,8 @@
             <img src="RWimg 1.png" />
             <div class="course-content">
                 <h3>Reading & Writing</h3>
-                <p>₹1500</p>
+                <p>ACTIVE🚨</p>
+                <!-- <p>₹1500</p> -->
                 <a class="join-btn">Join Course</a>
             </div>
         </div>
@@ -209,7 +215,7 @@
     </section>
 
     <div class="subscribe">
-        <h2>Subscribe to Get In Touch</h2>
+        <h2>Subscribe to Get In Touch</h2><br>
         <input type="email" placeholder="Email Address" />
         <button>Send</button>
     </div>

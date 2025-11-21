@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhasha Gyan | Courses</title>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+        body { background: #fffaf3; }
+
+        /* Navbar */
+        header { width: 100%; padding: 25px 8%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+        header nav a { margin: 0 15px; text-decoration: none; color: #000; font-size: 15px; }
+        .btn-login { background: #3a1f68; padding: 10px 22px; border-radius: 25px; color: #fff; text-decoration: none; }
+
+        /* Page Title */
+        h1.page-title {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 40px;
+            color: #3a1f68;
+        }
+
+        /* Courses Grid */
+        .courses-container { width: 90%; margin: 40px auto; display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; }
+        .course-card { width: 32%; min-width: 280px; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden; }
+        .course-card img { width: 100%; height: auto; border-radius: 10px 10px 0 0; }
+        .course-content { padding: 20px; }
+        .course-content h3 { font-size: 22px; }
+        .course-content p { color: #444; margin-top: 8px; }
+
+        .join-btn { 
+            background: #ff6600; 
+            padding: 10px 20px; 
+            border-radius: 25px; 
+            color: white; 
+            text-decoration: none; 
+            display: inline-block; 
+            margin: 15px 0; 
+            cursor: pointer;
+        }
+
+        /* Mobile */
+        @media(max-width: 480px) {
+            h1.page-title { font-size: 28px; }
+            .course-card { width: 100% !important; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Bhasha Gyan</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about us.html">About Us</a>
+            <a href="course.html">Courses</a>
+            <a href="services.html">Our Service</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+        <a href="loginpage.html" class="btn-login">Login</a>
+        <a href="signin.html" class="btn-login">Sign In</a>
+    </header>
+
+    <h1 class="page-title">Our Courses</h1>
+
+    <div class="courses-container">
+
+        <div class="course-card">
+            <img src="DBHP 1.png" />
+            <div class="course-content">
+                <h3>DBHPS All Eight Exams</h3>
+                <p>Fees depend on level</p>
+                <a class="join-btn">Join Course</a>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <img src="spoken_img.png" />
+            <div class="course-content">
+                <h3>Spoken Hindi (5 Levels)</h3>
+                <p>Fees depend on level</p>
+                <a class="join-btn">Join Course</a>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <img src="RWimg 1.png" />
+            <div class="course-content">
+                <h3>Reading & Writing</h3>
+                <p>₹1500</p>
+                <a class="join-btn">Join Course</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

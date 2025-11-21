@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In | Bhasha Gyan</title>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+        body {
+            background: #FDF8EE;
+        }
+
+        /* Navbar */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            flex-wrap: wrap;
+        }
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+            font-size: 15px;
+        }
+        .btn-login {
+            background: #3a1f68;
+            padding: 10px 22px;
+            border-radius: 25px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Sign In Box */
+        .signin-container {
+            width: 90%;
+            max-width: 420px;
+            margin: 60px auto;
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .signin-container h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #3a1f68;
+        }
+
+        .signin-container p {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .signin-container input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .signin-btn {
+            width: 100%;
+            padding: 12px;
+            background: #ff6600;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .signin-container a {
+            text-decoration: none;
+            color: #3a1f68;
+            font-weight: 500;
+        }
+
+        .extra-links {
+            margin-top: 18px;
+            font-size: 14px;
+        }
+
+        /* Mobile */
+        @media(max-width: 480px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Bhasha Gyan</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about us.html">About Us</a>
+            <a href="course.html">Courses</a>
+            <a href="services.html">Our Service</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+
+        <a href="signin.html" class="btn-login">Sign In</a>
+    </header>
+
+    <!-- Sign In Card -->
+    <div class="signin-container">
+        <h2>Welcome Back</h2>
+        <p>Login to continue your Hindi learning journey</p>
+
+        <input type="email" placeholder="Email Address" />
+        <input type="password" placeholder="Password" />
+
+        <button class="signin-btn">Sign In</button>
+
+        <div class="extra-links">
+            <p><a href="#">Forgot Password?</a></p>
+            <p>Don't have an account? <a href="signin.html">Create Account</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
