@@ -109,16 +109,25 @@
     <h2>Create Your Account</h2>
 
     <div class="signup-box">
-        <input type="text" placeholder="Full Name" />
-        <input type="email" placeholder="Email Address" />
-        <input type="text" placeholder="Phone Number" />
-        <input type="password" placeholder="Password" />
-        <input type="password" placeholder="Confirm Password" />
+    <form id="signupForm">
 
-        <button class="signup-btn">Create Account</button>
+        <input id="signupName" type="text" placeholder="Full Name" required />
+        <input id="signupEmail" type="email" placeholder="Email Address" required />
+        <input id="signupPhone" type="text" placeholder="Phone Number" />
+        <input id="signupPassword" type="password" placeholder="Password" required />
+        <input id="signupConfirm" type="password" placeholder="Confirm Password" required />
+
+        <button class="signup-btn" type="submit">Create Account</button>
 
         <p>Already have an account? <a href="loginpage.html">login</a></p>
-    </div>
+
+    </form>
+</div>
+
+<!-- later we will add auth-signup.js here -->
+<script type="module" src="assets/firebase-config.js"></script>
+<script type="module" src="assets/auth-signup.js"></script>
+
 
 </body>
 </html>
